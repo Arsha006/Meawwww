@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f0f14" />
+    <title>Nature's Roast • Make a noise. Get roasted.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg-blob b1"></div>
+    <div class="bg-blob b2"></div>
+    <div class="bg-blob b3"></div>
+
+    <header class="site-header">
+      <h1 class="brand"><span class="main-emoji">🦜</span> Nature's Roast</h1>
+      <p class="tag">Imitate an animal. We’ll pick a different one to roast you.</p>
+    </header>
+
+    <main class="container">
+      <section class="card record-card">
+        <div class="visualizer" aria-hidden="true">
+          <canvas id="wave"></canvas>
+          <div id="recordLamp" class="lamp" title="Recording"></div>
+          <div class="recording-indicator" id="recDots" hidden>
+            <div class="recording-dots"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="recordBtn" class="btn record-btn" aria-pressed="false">
+            <span class="icon" aria-hidden="true">🎙️</span>
+            <span class="label">Start recording</span>
+          </button>
+          <div id="timer" class="timer" aria-live="polite">00:00</div>
+        </div>
+
+        <p class="hint">
+          Make your most chaotic animal impression. Tap again to stop.
+          <span class="hint-animals">🐶 🐱 🦁 🐸 🦆 🐍 🐒 🦉</span>
+        </p>
+      </section>
+
+      <section id="result" class="card result-card hidden" aria-live="polite">
+        <div class="image-wrap skeleton">
+          <img id="animalImg" alt="Random animal" />
+        </div>
+        <div class="result-text">
+          <div class="result-badge">🎲 Random roast incoming</div>
+          <h2 id="animalName" class="animal-name">—</h2>
+          <p id="quip" class="quip">Your roast will appear here.</p>
+        </div>
+        <div class="actions">
+          <button id="againBtn" class="btn action-btn">Try another</button>
+          <button id="copyBtn" class="btn ghost action-btn">Copy line</button>
+          <button id="ttsBtn" class="btn ghost audio-btn" aria-pressed="false">🔈 Read roast</button>
+          <button id="muteBtn" class="btn ghost audio-btn" aria-pressed="false">🔇 Mute you</button>
+          <button id="downloadBtn" class="btn ghost audio-btn">⬇️ Download</button>
+          <button id="shareBtn" class="btn ghost audio-btn">📤 Share</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-animals">🦊 🐼 🐯 🦄 🐧 🐨</div>
+      <span>Made for laughs. No animals were harmed 🫶</span>
+    </footer>
+
+    <div id="sarcasticPopups" class="sarcastic-popups" aria-hidden="true"></div>
+    <div id="floaters" class="floaters" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
