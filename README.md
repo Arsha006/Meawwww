@@ -1,10 +1,10 @@
 🦜 Nature's Roast 🎯
 Basic Details
-Team Name: The Chaotic Chirpers
-Team Members
-Team Lead: [Your Name] – [Your College]
+Team Name: usless fr
+Team Members aswath,arsha
+Team Lead:aswth
 
-Member 1: [Aswth krishna mb] – [sahrdaya collage of engineering and technology]
+Member 1: [Aswath krishna mb] – [sahrdaya collage of engineering and technology]
 
 Member 2: [Arsha m] – [sahrdaya collage of engineering and technology]
 
